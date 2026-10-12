@@ -93,6 +93,44 @@
                 <dt>Música y lectura</dt>
                 <dd>Me gusta escuchar música y disfrutar de la lectura en mi tiempo libre.</dd>
             </dl>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas comunicarte conmigo, puedes llenar el siguiente formulario.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Ej. Juan Pérez" required>
+
+                    <br><br>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo"
+                           placeholder="ejemplo@dominio.com" required>
+
+                    <br><br>
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="academico">Consulta académica</option>
+                        <option value="colaboracion">Colaboración</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"
+                              rows="4" required></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Enviar mensaje</button>
+                </fieldset>
+            </form>
         </section>
     </main>
 </body>
