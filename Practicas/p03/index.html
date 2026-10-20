@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de cocina | MasterChef</title>
+</head>
+<body>
+    <header>
+        <h1>Blog de cocina MasterChef</h1>
+    </header>
+
+    <main>
+        <!-- article contiene una receta independiente. -->
+        <article>
+            <header>
+                <!-- h2 identifica el título de la receta dentro del blog. -->
+                <h2>Guacamole (clásico)</h2>
+            </header>
+
+            <!-- blockquote marca una cita extensa. -->
+            <blockquote>
+                <p>Existe un condimento que no puede faltar en toda mesa mexicana.
+                Algunos lo consideran una salsa, otros un aderezo, algunos incluso
+                le llaman ensalada, otros simplemente le llaman por su nombre
+                propio: Guacamole.</p>
+            </blockquote>
+
+            <!-- p delimita un párrafo de texto. -->
+            <p>Aunque el guacamole se prepara de diferentes formas según la zona
+            de la que provenga la receta, la base suele ser la misma. Aquí te
+            mostramos una receta muy completa para preparar esta conocida salsa
+            mexicana:</p>
+
+            <!-- section agrupa una parte temática de la receta. -->
+            <section aria-labelledby="ingredientes">
+                <!-- h3 identifica un apartado de la receta. -->
+                <h3 id="ingredientes">Ingredientes</h3>
+
+                <!-- ul contiene una lista sin orden obligatorio.
+                     Cada li representa un ingrediente. -->
+                <ul>
+                    <li>4 o 5 aguacates maduros</li>
+                    <li>1 cebolla mediana (normal)</li>
+                    <li>1 tomate mediano</li>
+                    <li>1 chile serrano (o un jalapeño en conserva)</li>
+                    <li>Zumo de 1/2 lima o limón</li>
+                    <li>1 manojo de cilantro fresco</li>
+                    <li>Sal</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="instrucciones">
+                <h3 id="instrucciones">Instrucciones</h3>
+
+                <!-- ol contiene pasos ordenados.
+                     Cada li representa un paso de la preparación. -->
+                <ol>
+                    <li>Lavar bien el tomate y el manojo de cilantro.</li>
+                    <li>Pelar la cebolla y quitarle la capa exterior.</li>
+                    <li>Trozar la cebolla y el tomate en trozos muy pequeños.</li>
+                    <li>Picar las hojas de cilantro lo más fino posible,
+                        desechando los tallos.</li>
+                    <li>Poner todos los ingredientes en un recipiente,
+                        preferentemente un molcajete.</li>
+                    <li>Cortar por la mitad los aguacates, retirando el hueso.</li>
+                    <li>Sacar toda la pulpa posible de los aguacates y ponerla
+                        en el molcajete.</li>
+                    <li>Añadir el zumo de 1/2 lima con una pizca de sal.</li>
+                    <li>Añadir un chile serrano muy bien picadito.</li>
+                    <li>Machacar todos los ingredientes en el molcajete.</li>
+                </ol>
+
+                <p>En caso de no contar con un molcajete, se puede utilizar un
+                tenedor procurando que la pulpa del aguacate se mezcle con los
+                demás ingredientes. Debe quedarnos un guacamole con los trozos
+                visibles, pero opcionalmente puede pasarse por la batidora para
+                dejarlo más cremoso y con una textura más uniforme.</p>
+            </section>
+        </article>
+
+        <!-- article contiene una publicación independiente del blog. -->
+        <article>
+            <header>
+                <!-- time identifica la fecha; datetime permite
+                     interpretarla sin depender del idioma. -->
+                <p>publicado por MasterChef,
+                    <time datetime="2018-11-15">November 15, 2018</time>
+                </p>
+
+                <h2>Bajito y Despacito</h2>
+            </header>
+
+            <!-- em expresa énfasis.
+                 dfn identifica el término que se define.
+                 i marca una expresión de otro idioma. -->
+            <p>Esta semana estamos <em>extremadamente</em> emocionados por
+            presentar una nueva técnica de cocina llamada
+            <dfn><i lang="fr">sous vide</i></dfn>.
+            Con la técnica <i lang="fr">sous vide</i>, tú sumerges un recipiente
+            (generalmente de plástico sellado al vacío) en un baño de agua
+            que precisamente se adapta a la temperatura requerida para
+            que la comida sea cocinada.
+            <!-- cite identifica el título de una obra o programa. -->
+            En este programa, <cite>Cocina para Geeks</cite>, Jaime Potter
+            describe la técnica como
+            <!-- q marca una cita breve. -->
+            <q>poción mágica a temperatura ultra baja</q>.</p>
+
+            <!-- b llama la atención sobre el nombre del platillo. -->
+            <p>La siguiente semana, prepararemos
+            <b>Salmon Sous Vide con Eneldo Holandés</b>.
+            Para asistir al programa, contáctanos antes del 30 de Noviembre.</p>
+
+            <!-- br introduce un salto de línea entre los datos de contacto. -->
+            <p>registro@masterchef.com<br>
+            552-336-1800</p>
+
+            <!-- small identifica una advertencia complementaria. -->
+            <p><small>Advertencia: El salmón cocinado a la Sous vide no está
+            pasteurizado. Evítalo si se está embarazada o se tiene problemas
+            de alergia e inmunidad.</small></p>
+        </article>
+    </main>
+</body>
+</html>
