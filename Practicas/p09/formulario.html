@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro al Concurso</title>
+  <style>
+    ol, ul {
+      list-style-type: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Registro al Concurso "Chidos mis Tenis"</h1>
+
+  <p>
+    ¿Quieres cambiar tus viejos tenis por un par
+    personalizado de Tenis Mike®?<br><br>
+    Justifica el por qué tus tenis se
+    <em>tienen que</em> ir y tú puedes ser uno
+    de los diez afortunados ganadores.
+  </p>
+
+  <form action="concurso.php" method="post">
+
+    <h2>Información de Participación</h2>
+
+    <fieldset>
+      <legend>Información Personal</legend>
+
+      <ul>
+        <li>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre"
+                 name="name" required>
+        </li>
+
+        <li>
+          <label for="correo">Dirección de E-mail:</label>
+          <input type="email" id="correo"
+                 name="email" required>
+        </li>
+
+        <li>
+          <label for="telefono">Número Telefónico:</label>
+          <input type="tel" id="telefono"
+                 name="phone" required>
+        </li>
+
+        <li>
+          <label for="historia">
+            Mis tenis son tan feos porque...
+          </label><br>
+          <textarea id="historia" name="story"
+                    rows="4" cols="60"
+                    maxlength="300"
+                    placeholder="No más de 300 caracteres de longitud"
+                    required></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <h2>Diseña tus Mike personalizados:</h2>
+
+    <fieldset>
+      <legend>Diseño personalizado del Tenis</legend>
+
+      <fieldset>
+        <legend>Color (escoge uno):</legend>
+
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="color"
+                     value="red">
+              Rojo
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color"
+                     value="blue" checked>
+              Azul
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color"
+                     value="black">
+              Negro
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="color"
+                     value="silver">
+              Plateado
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Características (escoge tantas como quieras):
+        </legend>
+
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox"
+                     name="features[]" value="laces">
+              Cordones brillantes
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox"
+                     name="features[]" value="logo"
+                     checked>
+              Logo metálico
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox"
+                     name="features[]" value="soles">
+              Suela luminosa
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="checkbox"
+                     name="features[]" value="wifi">
+              WiFi integrado
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Talla</legend>
+
+        <label for="talla">
+          Las medidas reflejan el estándar masculino:
+        </label>
+
+        <select id="talla" name="size" size="1">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5" selected>5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+        </select>
+      </fieldset>
+
+    </fieldset>
+
+    <p>
+      <input type="submit" value="¡Chidos mis Tenis!">
+      <input type="reset" value="Limpiar">
+    </p>
+
+  </form>
+
+</body>
+</html>
